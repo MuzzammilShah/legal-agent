@@ -1,0 +1,7 @@
+streamlit
+langgraph
+google-genai
+qdrant-client
+python-dotenv
+faiss-cpu
+PyPDF2

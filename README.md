@@ -36,7 +36,7 @@ This project is optimized for deployment on **Streamlit Community Cloud** and is
 2. **agents.py**:
 
    * **QueryAgent**: Retrieves and trims relevant chunks via `vectorstore.retrieve_relevant_chunks()`.
-   * **SummarizationAgent**: Calls Gemini to produce a numbered, plain‑language guide.
+   * **SummarizationAgent**: Calls Gemini to produce a numbered, plain‑language guide - cleans up and produces points based on retrieved data from knowledge base.
    * **ResponseAgent**: Crafts a concise reply and always asks for follow‑ups.
 
 3. **vectorstore.py**:
@@ -61,7 +61,7 @@ This project is optimized for deployment on **Streamlit Community Cloud** and is
 
     <div align="center">
     <img src="assets\embeddings-loss.png" alt="Embeddings loss" width="50%">
-    <p>Loss of chunks of data</p>
+    <p><i>Loss of chunks of data</i></p>
     </div>
         
     - So, switched to an open-source solution (to the rescue again — yay!). I already have an **Ollama** server set up on my machine, so all I had to do was pull an embedding model and point my code to the local server.
@@ -86,13 +86,18 @@ This project is optimized for deployment on **Streamlit Community Cloud** and is
           <td><img src="assets/long-response-1.png" alt="Long response 1" width="400"/></td>
           <td><img src="assets/long-response-2.png" alt="Long response 2" width="400"/></td>
         </tr>
+      </table>
+
+      <p><i>Initial working of agent - uncontrolled long responses</i></p>
+
+      <table>
         <tr>
           <td><img src="assets/improved-response.png" alt="Improved responses" width="400"/></td>
           <td><img src="assets/longer-chats-and-follow-ups.png" alt="Longer chats and follow ups" width="400"/></td>
         </tr>
       </table>
       
-      <p><i>Different stages of Agent improvement ✨</i></p>
+      <p><i>Improved agent performance - controlled outputs and follow ups</i></p>
     
       <br/>
     </div>

@@ -1,4 +1,23 @@
-### **Local development setup instructions**
+## **Local development setup instructions**
+
+### Repository Structure
+
+```
+├── app.py            # Streamlit application entrypoint, Main script to run
+├── agents.py         # Multi‑agent workflow definition
+├── vectorstore.py    # Embedding and Qdrant search utilities
+├── qdrant_setup.py   # First script to run, to generate and store embeddings
+├── requirements.txt  # Python dependencies to install
+├── .env              # Has been hidden
+├── data              # Source files for knowledge base
+   ├── Guide_to_Litigation_India.pdf
+   ├── Legal_Compliance_ICAI.pdf
+├── extra             # Contains additional codes which were used to experiment with during developement (can be ignored)
+├── installations.md
+└── README.md     
+```
+
+---
 
 ### Prerequisites
 

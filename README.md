@@ -15,24 +15,6 @@ A Streamlit-based chatbot that leverages Google Gemini API, Qdrant and LangGraph
 
 ---
 
-### Repository Structure
-
-```
-├── app.py            # Streamlit application entrypoint, Main script to run
-├── agents.py         # Multi‑agent workflow definition
-├── vectorstore.py    # Embedding and Qdrant search utilities
-├── qdrant_setup.py   # First script to run, to generate and store embeddings
-├── requirements.txt  # Python dependencies to install
-├── .env              # Has been hidden
-├── data              # Source files for knowledge base
-   ├── Guide_to_Litigation_India.pdf
-   ├── Legal_Compliance_ICAI.pdf
-├── extra             # Contains additional codes which were used to experiment with during developement (can be ignored)
-└── README.md     
-```
-
----
-
 ### 🌐 Deployment
 
 This project is optimized for deployment on **Streamlit Community Cloud** and is publicly accessible [here](https://legal-agent-chat.streamlit.app/).
@@ -49,7 +31,7 @@ This project is optimized for deployment on **Streamlit Community Cloud** and is
 
 ### 📝 Architecture Overview and Code implementations
 
-1. **app.py**: Handles user input, maintains chat history, and invokes the compiled state graph
+1. **app.py**: Handles user input, maintains chat conversation, and invokes the compiled state graph
 
 2. **agents.py**:
 
@@ -105,8 +87,8 @@ This project is optimized for deployment on **Streamlit Community Cloud** and is
           <td><img src="assets/long-response-2.png" alt="Long response 2" width="400"/></td>
         </tr>
         <tr>
-          <td><img src="improved-response.png" alt="Improved responses" width="400"/></td>
-          <td><img src="longer-chats-and-follow-ups.png" alt="Longer chats and follow ups" width="400"/></td>
+          <td><img src="assets/improved-response.png" alt="Improved responses" width="400"/></td>
+          <td><img src="assets/longer-chats-and-follow-ups.png" alt="Longer chats and follow ups" width="400"/></td>
         </tr>
       </table>
       

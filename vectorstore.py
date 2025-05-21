@@ -92,7 +92,9 @@
 #     # Return texts
 #     return [hit.payload["text"] for hit in hits]
 
-# vectorstore.py
+# ==================================
+
+# FINAL MAIN IMPLEMENATION
 import os
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient

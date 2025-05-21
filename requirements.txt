@@ -9,3 +9,4 @@ faiss-cpu
 PyPDF2
 ollama
 langchain-google-genai
+google-generativeai
